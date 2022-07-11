@@ -1,0 +1,28 @@
+ name: fountain_to_pdf
+
+ on:
+   push:
+     branches:
+       - main
+   workflow_dispatch:
+
+ jobs:
+   convert_files:
+     name: Convert Fountain to PDF
+     runs-on: ubuntu-latest
+     permissions:
+       contents: write
+     steps:
+       # Install 'afterwriting
+       - name: Install 'afterwriting
+         run: npm install afterwriting -g
+
+       # Check out your repository
+       - uses: actions/checkout@v3
+
+       # Invoke 'afterwriting to export script.fountain to script.pdf
+       - name: Generate PDF
+         run: afterwriting --source screenplay.fountain --pdf screenplay.pdf --overwrite --config config.json
+
+       # Commits changes
+       - uses: stefanzweifel/git-auto-commit-action@v4
