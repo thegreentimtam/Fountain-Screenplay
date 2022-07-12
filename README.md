@@ -11,4 +11,4 @@ The PDF export settings are kept in the `config.json` file. See [here](https://g
 
 ## Better Fountain
 
-I recommend editing your script using Better Fountain for Visual Studio Code. This will give you many features, including previews, syntax highlighting, automatic scene numbering, and screenplay statistics. 
+I recommend editing your script using [Better Fountain for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=piersdeseilligny.betterfountain). This will give you many features, including previews, syntax highlighting, automatic scene numbering, and screenplay statistics. 
