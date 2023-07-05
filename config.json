@@ -16,6 +16,6 @@
     "print_header": "",
     "print_footer": "",
     "print_watermark": "",
-    "scenes_numbers": "none",
+    "scenes_numbers": "both",
     "each_scene_on_new_page": false
 }
